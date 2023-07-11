@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    place-items: center;
+}
+button{
+    height: 100px;
+    width: 200px;
+    position: relative;
+    margin: 100px;
+    font-size: 20px;
+}
+@keyframes pulse {
+    0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+button:hover {
+    animation: pulse 2s infinite ease-in-out;
+    transform-origin: center center;
+}
